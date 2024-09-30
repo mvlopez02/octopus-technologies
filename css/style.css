@@ -1,0 +1,343 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+body{
+    background-color: #FFFFFF;
+    font-family: 'DM Sans', sans-serif;
+    
+}
+
+/* nav */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);  
+    margin: 10px;
+}
+
+
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #26026D;
+    padding-right: 10px;
+}
+
+nav ul li a.active {
+    font-weight: 800;
+}
+
+/*hero section*/
+.hero-section{
+    background-image: url('../assets/hero.jpeg');
+    background-size: cover;
+    min-height: 85vh;
+    max-width: 100%;
+    position: relative;
+}
+
+.hero-container{
+    position: absolute;
+    bottom: 0;
+    font-size: 4rem;
+    padding: 20px;
+}
+
+.hero-container h1{
+    color: #FFFFFF;
+    /*background: linear-gradient(to bottom, transparent 50%, #ed1579 );*/
+}
+
+.hero-title-highlight{
+    /*background: linear-gradient(to bottom, transparent 50%, #ed1579 50% );*/
+    background: #7e43ff;
+    color: #26026D;
+}
+
+/*Welcoming section and stages*/
+
+.welcoming-container{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    padding: 60px;
+}
+
+.welcoming-container h2{
+    font-size: 4rem;
+    color: #5309ce;
+}
+
+.stages-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 80px;
+}
+
+.card-column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #d8cfff;
+    border-radius: 8px;
+    gap:40px;
+    padding: 20px;
+    width: 100%;
+    
+}
+
+.card img{
+    width: 100px;
+}
+
+.card-text{
+    gap: 20px;
+    color: #7e43ff;
+}
+
+.card-text h4{
+    font-size: 1.5rem;
+
+}
+
+/*About*/
+.about-section{
+    background-color: #ebe6ff;
+    margin: 10px;
+    padding: 60px 120px;
+    text-align: center;
+    color: #26026D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.divider {
+    width: 100%;
+    border: none;
+    border-top: 4px solid #26026D; 
+    margin: 30px 0; 
+  }
+
+
+/*Projects*/
+
+.goals-problem-section{
+    background-color: #5D5A88;
+    border-radius: 10px;
+    padding: 80px;
+    margin: 10px;
+}
+
+.goals-container{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    background-color: #bca9ff;
+    padding: 80px;
+    border-radius: 8px;
+    color: #5D5A88;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-container h2{
+    font-size: 3rem;
+}
+
+.text-container p{
+    color: #5D5A88;
+}
+
+/*Team*/
+
+.team-section{
+    background-color: #f4f1ff;
+    border-radius: 10px;
+    padding:60px 140px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin: 10px;
+}
+
+.team-section-text{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px;
+    gap: 10px;
+}
+
+.team-section-text h2{
+    font-size: 2rem;
+    color: #26026D;
+}
+
+.team-section-text p{
+    color: #5D5A88;
+}
+
+
+.team-cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row-cards{
+    display: flex;
+    gap: 20px;
+}
+
+.team-member-card{
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #5D5A88;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+}
+
+.team-member-card img{
+    height: 100%;
+    border-radius:8px ;
+}
+
+.team-member-card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.team-member-card-text h3{
+    color: #26026D;
+}
+
+.team-member-card-text h4{
+    color:#5D5A88;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+.team-member-card-text p{
+    color:#5D5A88;
+    font-size: 0.8rem;
+}
+
+
+/*Gallery*/
+
+.gallery-section{
+    padding: 40px 0;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1224px;
+}
+
+.gallery-section h2{
+    color: #4509a9;
+    font-size: 3rem;
+}
+
+.gallery{
+    display: flex;
+    gap:20px;
+}
+
+
+.gallery-column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.gallery-photo img{
+    width: 100%;
+    /*height: 100%;*/
+    border-radius: 4px;
+}
+
+
+
+
+
+/*footer*/
+
+footer{
+    background-color: #26026D;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px;
+}
+
+.footer-left img{
+    width: 200px;
+    height: 60px;
+}
+
+
+.email-input{
+    border-radius: 50px;
+    height: 50px;
+    width: 400px;
+    padding: 20px;
+    border: none;
+}
+
+.subscribe-button{
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #ed1579;
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: pointer;
+}
