@@ -43,6 +43,12 @@ nav ul li a {
     text-decoration: none;
     color: #26026D;
     padding-right: 10px;
+    transition: background-color 0.8s ease;
+}
+
+nav ul li a:hover{
+    background-color: #fee5f3;
+    color: #ed1579;
 }
 
 nav ul li a.active {
@@ -110,12 +116,6 @@ nav ul li a.active {
 }
 
 
-.card-column{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 .card{
     display: flex;
     flex-direction: column;
@@ -168,10 +168,10 @@ nav ul li a.active {
 }
 
 .biblio-container{
-    text-align: center;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    text-align: center;
     align-items: center;
 }
 
@@ -183,7 +183,8 @@ nav ul li a.active {
 
 .biblio-container-cards-card{
     background-color: #d8cfff;
-    width: 240px;
+    width: 100%;
+    min-width: 160px;
     align-items: center;
     padding: 20px;
     border-radius: 8px;
@@ -206,6 +207,12 @@ nav ul li a.active {
     color: #26026D;
     text-decoration: none;
     padding: 10px;
+}
+
+.biblio-container-cards-card-btn:hover{
+    background-color: #4509a9;
+    color: #f4f1ff;
+    font-weight: 700;
 }
 
 
@@ -276,6 +283,7 @@ nav ul li a.active {
     background-color: #ebe6ff;
 }
 
+
 .factors-section-cards-container-card-icon{
     background-color: #f4f1ff;
     border-radius: 50%;
@@ -298,6 +306,8 @@ nav ul li a.active {
     flex-direction: column;
     gap: 8px;
 }
+
+
 
 
 
@@ -465,9 +475,15 @@ footer{
     text-decoration: none;
     padding: 10px;
     background-color: #ed1579;
+    opacity: 0.6;
+    transition: 0.3s;
     color: #FFFFFF;
     font-weight: 600;
     cursor: pointer;
+}
+
+.subscribe-button:hover{
+    opacity: 1;
 }
 
 
@@ -477,7 +493,6 @@ footer{
 @media (max-width:768px){
 
     /*home*/
-    
 
     .welcoming-container{
         flex-wrap: wrap;
@@ -485,6 +500,19 @@ footer{
         justify-content: center;
         gap: 20px;
     }
+
+     /*about*/
+
+    .about-section{
+        padding: 30px 40px;
+    }
+
+   
+    .biblio-container-cards{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 
 
     /*footer*/
