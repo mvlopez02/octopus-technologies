@@ -55,7 +55,7 @@ nav ul li a.active {
     position: relative;
     min-height: 85vh;
     max-width: 100%;
-    overflow: hidden; /* Ensures video stays within section boundaries */
+    overflow: hidden; 
 }
 
 .hero-video {
@@ -99,12 +99,14 @@ nav ul li a.active {
 }
 
 .stages-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*repeat (2, 1fr)*/
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 20px;
-    padding: 40px 80px;
+    padding: 40px 100px;
 }
+
 
 .card-column{
     display: flex;
@@ -127,7 +129,7 @@ nav ul li a.active {
 
 .card img{
     width: 100px;
-    color: #ed1579;
+    height: 100px;
 }
 
 .card-text{
@@ -181,7 +183,6 @@ nav ul li a.active {
 
 .biblio-container-cards-card{
     background-color: #d8cfff;
-    height: max-content;
     width: 240px;
     align-items: center;
     padding: 20px;
@@ -189,7 +190,7 @@ nav ul li a.active {
     display: flex;
     flex-direction: column;
     gap: 10px ;
-    flex-grow: 1;
+   
 }
 
 
@@ -339,7 +340,7 @@ nav ul li a.active {
 }
 
 .gallery-section h2{
-    color: #4509a9;
+    color: #26026D;
     font-size: 3rem;
 }
 
