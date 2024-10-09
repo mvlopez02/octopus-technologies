@@ -513,6 +513,23 @@ footer{
         justify-content: center;
     }
 
+    /*project*/
+    .goals-problem-section{
+        padding: 20px;
+    }
+
+    .goals-container{
+        padding: 20px;
+    }
+
+    .factors-section{
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .factors-section-cards-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 
     /*footer*/
@@ -533,5 +550,14 @@ footer{
 
     .email-input{
         width: 200px;
+    }
+}
+
+
+@media (max-width:400px){
+
+    /*project*/
+    .factors-section-cards-container{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
