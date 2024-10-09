@@ -11,7 +11,6 @@
 body{
     background-color: #FFFFFF;
     font-family: 'DM Sans', sans-serif;
-    
 }
 
 /* nav */
@@ -53,25 +52,25 @@ nav ul li a.active {
 /*home*/
 .hero-section {
     position: relative;
-    min-height: 85vh;
-    max-width: 100%;
-    overflow: hidden; 
+    height: 85vh;
+    /*min-height 600px*/
+    width: 100%;
+    overflow: hidden;
 }
 
 .hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
 .hero-container {
+    bottom: 0;
+    left: 0;
     position: absolute;
-    top: 62%;
+    right: 0;
     color: #FFFFFF; 
     padding: 20px;
+
 }
 
 .hero-container h1 {
@@ -81,7 +80,7 @@ nav ul li a.active {
 .hero-title-highlight {
     background: #7e43ff; /* Highlight background color */
     color: #26026D; /* Highlight text color */
-    padding: 5px 10px; /* Adjust padding as needed */
+    padding: 5px 10px; 
 }
 
 
@@ -123,8 +122,7 @@ nav ul li a.active {
     border-radius: 8px;
     gap:40px;
     padding: 20px;
-    width: 100%;
-    
+    width: 100%;   
 }
 
 .card img{
@@ -139,7 +137,6 @@ nav ul li a.active {
 
 .card-text h4{
     font-size: 1.5rem;
-
 }
 
 /*About*/
@@ -190,7 +187,6 @@ nav ul li a.active {
     display: flex;
     flex-direction: column;
     gap: 10px ;
-   
 }
 
 
@@ -245,7 +241,7 @@ nav ul li a.active {
 }
 
 .factors-section{
-    padding: 60px 30px;
+    padding: 60px 80px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -256,9 +252,6 @@ nav ul li a.active {
 .factors-section h2{
     font-size: 3rem;
     color: #564781;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
 }
 
 .factors-section-cards-container{
@@ -268,7 +261,6 @@ nav ul li a.active {
 }
 
 .factors-section-cards-container-card{
-    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -427,8 +419,6 @@ nav ul li a.active {
 
 
 
-
-
 /*footer*/
 
 footer{
@@ -451,6 +441,11 @@ footer{
     gap: 10px;
 }
 
+.newsletter-form{
+    display: flex;
+    gap: 10px;
+}
+
 
 .email-input{
     border-radius: 50px;
@@ -470,4 +465,27 @@ footer{
     color: #FFFFFF;
     font-weight: 600;
     cursor: pointer;
+}
+
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width:768px){
+    footer{
+        flex-wrap: wrap;
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .newsletter-form{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .email-input{
+        width: 200px;
+    }
 }
