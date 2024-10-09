@@ -59,8 +59,11 @@ nav ul li a.active {
 }
 
 .hero-video {
-    width: 100%;
+
+    height: 100%;
     object-fit: cover;
+    object-position: center;
+    width: 100%;
 }
 
 .hero-container {
@@ -472,6 +475,21 @@ footer{
 
 /* Media Queries for Responsiveness */
 @media (max-width:768px){
+
+    /*home*/
+    
+
+    .welcoming-container{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+    /*footer*/
+
+
     footer{
         flex-wrap: wrap;
         gap: 20px;
