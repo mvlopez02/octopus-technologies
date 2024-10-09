@@ -317,9 +317,9 @@ nav ul li a.active {
     background-color: #f4f1ff;
     border-radius: 10px;
     padding:60px 140px;
-    text-align: center;
     display: flex;
     flex-direction: column;
+    text-align: center;
     gap: 60px;
     margin: 10px;
 }
@@ -474,16 +474,15 @@ footer{
     text-align: center;
     text-decoration: none;
     padding: 10px;
-    background-color: #ed1579;
-    opacity: 0.6;
+    font-weight: 600;
+    background-color: #ff65ba;
     transition: 0.3s;
     color: #FFFFFF;
-    font-weight: 600;
     cursor: pointer;
 }
 
 .subscribe-button:hover{
-    opacity: 1;
+    background-color: #ed1579;
 }
 
 
@@ -531,6 +530,21 @@ footer{
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /*team*/
+
+    .team-section{
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .row-cards{
+        flex-wrap: wrap;
+    }
+
+    .team-section-text{
+        padding: 10px 20px;
+    }
+
 
     /*footer*/
 
@@ -550,6 +564,10 @@ footer{
 
     .email-input{
         width: 200px;
+    }
+
+    .subscribe-button{
+        background-color: #ed1579;
     }
 }
 
