@@ -244,6 +244,68 @@ nav ul li a.active {
     color: #5D5A88;
 }
 
+.factors-section{
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.factors-section h2{
+    font-size: 3rem;
+    color: #564781;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.factors-section-cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.factors-section-cards-container-card{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    border: 2px solid #5d4777;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #ebe6ff;
+}
+
+.factors-section-cards-container-card-icon{
+    background-color: #f4f1ff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.factors-section-cards-container-card-icon img{
+    width: 64px;
+    height: 64px;
+}
+
+.factors-section-cards-container-card-text{
+    color: #26026D;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+
 /*Team*/
 
 .team-section{
