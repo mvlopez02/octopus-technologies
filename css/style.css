@@ -160,6 +160,11 @@ nav ul li a.active {
     font-size: 3rem;
 }
 
+.about-section p{
+    text-align: justify;
+    padding: 10px;
+}
+
 .divider {
     width: 100%;
     border: none;
@@ -342,13 +347,8 @@ nav ul li a.active {
 
 
 .team-cards-container{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.row-cards{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     gap: 20px;
 }
 
