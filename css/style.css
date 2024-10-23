@@ -124,7 +124,7 @@ nav ul li a.active {
     background-color: #d8cfff;
     border-radius: 8px;
     gap:40px;
-    padding: 20px;
+    padding: 30px;
     width: 100%;   
 }
 
@@ -142,6 +142,10 @@ nav ul li a.active {
 
 .card-text h4{
     font-size: 1.5rem;
+}
+
+.card-text p{
+    text-align: justify;
 }
 
 /*About*/
