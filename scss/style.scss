@@ -8,8 +8,41 @@
     box-sizing: border-box;
    }
 
+// Paleta de colores Pink
+$pink-50: #fef1f8;
+$pink-100: #fee5f3;
+$pink-200: #fecbea;
+$pink-300: #ffa0d7;
+$pink-400: #ff65ba;
+$pink-500: #ff389d;
+$pink-600: #ed1579;
+$pink-700: #cf075e;
+$pink-800: #aa0a4d;
+$pink-900: #8e0d43;
+$pink-950: #570024;
+
+// Paleta de colores Blue-Purple
+$blue-purple-50: #f4f1ff;
+$blue-purple-100: #ebe6ff;
+$blue-purple-200: #d8cfff;
+$blue-purple-300: #bca9ff;
+$blue-purple-400: #9c79ff;
+$blue-purple-450: #7e43ff;
+$blue-purple-500: #701dff;
+$blue-purple-550: #564781;
+$blue-purple-600: #630bf6;
+$blue-purple-700: #5309ce;
+$blue-purple-800: #4509a9;
+$blue-purple-900: #26026d;
+
+$white: #FFFFFF;
+$white-100: #d8cfff;
+$white-200: #ebe6ff;
+
+
+
 body{
-    background-color: #FFFFFF;
+    background-color: $white;
     font-family: 'DM Sans', sans-serif;
 }
 
@@ -37,13 +70,13 @@ header{
             
             a{
                 text-decoration: none;
-                color: #26026D;
+                color: $blue-purple-900;
                 padding-right: 10px;
                 transition: background-color 0.8s ease;
 
                 &:hover{
-                    background-color: #fee5f3;
-                    color: #ed1579;
+                    background-color: $pink-100;
+                    color: $pink-600;
                 }
 
                 .active{
@@ -75,15 +108,15 @@ header{
         left: 0;
         position: absolute;
         right: 0;
-        color: #FFFFFF; 
+        color: $white; 
         padding: 20px;
 
         h1{
             font-size: 4rem;
 
             .hero-title-highlight {
-                background: #7e43ff; /* Highlight background color */
-                color: #26026D; /* Highlight text color */
+                background: $blue-purple-450; /* Highlight background color */
+                color: $blue-purple-900; /* Highlight text color */
                 padding: 5px 10px; 
             }
         }
@@ -99,7 +132,7 @@ header{
 
     h2{
         font-size: 4rem;
-        color: #5309ce;
+        color: $blue-purple-700;
     }
 }
 
@@ -117,7 +150,7 @@ header{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        background-color: #d8cfff;
+        background-color: $white-100;
         border-radius: 8px;
         gap:40px;
         padding: 30px;
@@ -132,7 +165,7 @@ header{
             display: flex;
             flex-direction: column;
             gap: 10px;
-            color: #7e43ff;
+            color: $blue-purple-450;
 
             h4{
                 font-size: 1.5rem;
@@ -148,11 +181,11 @@ header{
 
 /*About*/
 .about-section{
-    background-color: #ebe6ff;
+    background-color: $white-200;
     margin: 10px;
     padding: 60px 120px;
     text-align: center;
-    color: #26026D;
+    color: $blue-purple-900;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,7 +204,7 @@ header{
     .divider {
         width: 100%;
         border: none;
-        border-top: 4px solid #26026D; 
+        border-top: 4px solid $blue-purple-900; 
         margin: 30px 0; 
     }
 
@@ -188,7 +221,7 @@ header{
             align-items: stretch;
 
             &-card{
-                background-color: #d8cfff;
+                background-color: $white-100;
                 width: 100%;
                 min-width: 160px;
                 align-items: center;
@@ -205,16 +238,16 @@ header{
                 }
 
                 &-btn{
-                    border-color: #26026D;
+                    border-color: $blue-purple-900;
                     border-width: 2px;
                     border-style: solid;
-                    color: #26026D;
+                    color: $blue-purple-900;
                     text-decoration: none;
                     padding: 10px;
 
                     &:hover{
-                        background-color: #4509a9;
-                        color: #f4f1ff;
+                        background-color: $blue-purple-800;
+                        color: $white-200;
                         font-weight: 700;
                     }
                 }
@@ -228,7 +261,7 @@ header{
 /*project*/
 
 .goals-problem-section{
-    background-color: #564781;
+    background-color: $blue-purple-550;
     border-radius: 10px;
     padding: 80px;
     margin: 10px;
@@ -237,10 +270,10 @@ header{
         display: flex;
         gap: 30px;
         flex-direction: column;
-        background-color: #f4f1ff;
+        background-color: $white-100;
         padding: 80px;
         border-radius: 8px;
-        color: #564781;
+        color: $blue-purple-550;
 
         .text-container{
             display: flex;
@@ -252,7 +285,7 @@ header{
             }
 
             p{
-                color: #5D5A88;
+                color: $blue-purple-550;
             }
         }
     }
@@ -269,7 +302,7 @@ header{
 
     h2{
         font-size: 3rem;
-        color: #564781;
+        color: $blue-purple-550;
     }
 
     &-cards-container{
@@ -284,13 +317,13 @@ header{
             align-items: center;
             text-align: center;
             gap: 10px;
-            border: 2px solid #5d4777;
+            border: 2px solid $blue-purple-550;
             border-radius: 8px;
             padding: 20px;
-            background-color: #ebe6ff;
+            background-color: $white-200;
 
             &-icon{
-                background-color: #f4f1ff;
+                background-color: $blue-purple-100;
                 border-radius: 50%;
                 width: 100px;
                 height: 100px;
@@ -305,7 +338,7 @@ header{
             }
 
             &-text{
-                color: #26026D;
+                color: $blue-purple-900;
                 display: flex;
                 flex-direction: column;
                 gap: 8px;
@@ -318,7 +351,7 @@ header{
 /*Team*/
 
 .team-section{
-    background-color: #f4f1ff;
+    background-color: $white-200;
     border-radius: 10px;
     padding:60px 140px;
     display: flex;
@@ -335,11 +368,11 @@ header{
 
         h2{
             font-size: 2.5rem;
-            color: #26026D;
+            color: $blue-purple-900;
         }
 
         p{
-            color: #5D5A88;
+            color: $blue-purple-550;
         }
     }
 
@@ -353,9 +386,9 @@ header{
             align-items: center;
             border-style: solid;
             border-radius: 10px;
-            border-color: #5D5A88;
+            border-color: $blue-purple-550;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            background-color: #FFFFFF;
+            background-color: $white;
 
             img{
                 width: 50%;
@@ -372,11 +405,11 @@ header{
                 text-align: left;
 
                 h3{
-                    color: #26026D;
+                    color: $blue-purple-900;
                 }
 
                 h4{
-                    color:#5D5A88;
+                    color:$blue-purple-550;
                     text-transform: uppercase;
                     font-weight: 300;
                     letter-spacing: 2px;
@@ -384,7 +417,7 @@ header{
                 }
 
                 p{
-                    color:#5D5A88;
+                    color: $blue-purple-550S;
                     font-size: 0.8rem;
                 }
             }
@@ -407,7 +440,7 @@ header{
     max-width: 1224px;
 
     h2{
-        color: #26026D;
+        color: $blue-purple-900;
         font-size: 3rem;
     }
 
@@ -433,8 +466,8 @@ header{
 /*footer*/
 
 footer{
-    background-color: #26026D;
-    color: #FFFFFF;
+    background-color: $blue-purple-900;
+    color: $white;
     display: flex;
     justify-content: space-between;
     padding: 40px 80px;
@@ -471,13 +504,13 @@ footer{
                 text-decoration: none;
                 padding: 10px;
                 font-weight: 600;
-                background-color: #ff65ba;
+                background-color: $pink-400;
                 transition: 0.3s;
                 color: #FFFFFF;
                 cursor: pointer;
 
                 &:hover{
-                    background-color: #ed1579;
+                    background-color: $pink-600;
                 }
             }
         }
@@ -498,6 +531,10 @@ footer{
         text-align: center;
         justify-content: center;
         gap: 20px;
+    }
+
+    .stages-container{
+        grid-template-columns: repeat(1,1fr);
     }
 
      /*about*/
@@ -545,6 +582,10 @@ footer{
         padding: 10px 20px;
     }
 
+    .team-cards-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 
     /*footer*/
 
@@ -567,7 +608,7 @@ footer{
     }
 
     .subscribe-button{
-        background-color: #ed1579;
+        background-color: $pink-600;
     }
 }
 
