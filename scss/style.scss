@@ -139,7 +139,7 @@ header{
 
 .stages-container{
     display: grid;
-    grid-template-columns: 1fr 1fr; /*repeat (2, 1fr)*/
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: stretch;
     gap: 20px;
@@ -417,7 +417,7 @@ header{
                 }
 
                 p{
-                    color: $blue-purple-550S;
+                    color: $blue-purple-550;
                     font-size: 0.8rem;
                 }
             }
@@ -518,23 +518,15 @@ footer{
 }
 
 
-
-
-
 /* Media Queries for Responsiveness */
 @media (max-width:768px){
 
     /*home*/
-
     .welcoming-container{
         flex-wrap: wrap;
         text-align: center;
         justify-content: center;
         gap: 20px;
-    }
-
-    .stages-container{
-        grid-template-columns: repeat(1,1fr);
     }
 
      /*about*/
@@ -614,6 +606,12 @@ footer{
 
 
 @media (max-width:400px){
+    
+    /*home*/
+    .stages-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
 
     /*project*/
     .factors-section-cards-container{
