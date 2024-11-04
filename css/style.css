@@ -271,7 +271,7 @@ header nav ul li a .active {
 .team-section {
   background-color: #ebe6ff;
   border-radius: 10px;
-  padding: 60px 140px;
+  padding: 60px 80px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -370,27 +370,27 @@ footer {
   padding: 40px 80px;
   align-items: center;
 }
-footer-left img {
+footer .footer-left img {
   width: 200px;
   height: 60px;
 }
-footer-right {
+footer .footer-right {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-footer-right .newsletter-form {
+footer .footer-right .newsletter-form {
   display: flex;
   gap: 10px;
 }
-footer-right .newsletter-form .email-input {
+footer .footer-right .newsletter-form .email-input {
   border-radius: 50px;
   height: 40px;
   width: 300px;
   padding: 20px;
   border: none;
 }
-footer-right .newsletter-form .subscribe-button {
+footer .footer-right .newsletter-form .subscribe-button {
   border-radius: 20px;
   border: none;
   text-align: center;
@@ -402,12 +402,12 @@ footer-right .newsletter-form .subscribe-button {
   color: #FFFFFF;
   cursor: pointer;
 }
-footer-right .newsletter-form .subscribe-button:hover {
+footer .footer-right .newsletter-form .subscribe-button:hover {
   background-color: #ed1579;
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   /*home*/
   .welcoming-container {
     flex-wrap: wrap;
