@@ -248,7 +248,7 @@ header nav ul li a .active {
   background-color: #ebe6ff;
 }
 .factors-section-cards-container-card-icon {
-  background-color: #ebe6ff;
+  background-color: #d8cfff;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -442,14 +442,12 @@ footer-right .newsletter-form .subscribe-button:hover {
     padding: 20px;
     gap: 30px;
   }
-  .row-cards {
-    flex-wrap: wrap;
-  }
   .team-section-text {
     padding: 10px 20px;
   }
-  .team-cards-container {
+  .team-section .team-cards-container {
     grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
   }
   /*footer*/
   footer {
@@ -477,8 +475,27 @@ footer-right .newsletter-form .subscribe-button:hover {
     padding: 20px;
   }
   /*project*/
+  .goals-problem-section {
+    padding: 20px;
+  }
+  .goals-problem-section .goals-container {
+    padding: 20px;
+  }
+  .text-container h2 {
+    font-size: 2rem;
+  }
   .factors-section-cards-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  /*team*/
+  .team-section .team-cards-container .team-member-card {
+    flex-direction: column;
+  }
+  .team-section .team-cards-container .team-member-card img {
+    width: 100%;
+  }
+  .team-section .team-cards-container .team-member-card-text {
+    padding: 20px;
   }
 }
 
