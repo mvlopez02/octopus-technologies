@@ -95,6 +95,7 @@ header{
     /*min-height 600px*/
     width: 100%;
     overflow: hidden;
+    z-index: 1;
 
     .hero-video {
         height: 100%;
@@ -519,7 +520,120 @@ footer{
 
 
 /* Media Queries for Responsiveness */
+
+@media (max-width:950px){
+       /*team*/
+
+    .team-section{
+        padding: 20px;
+        gap: 30px;
+
+        &-text{
+            padding: 10px 20px;
+        }
+    
+        .team-cards-container{
+            grid-template-columns: repeat(1, 1fr);
+            padding: 20px;
+        }
+    }
+    
+}
+
 @media (max-width:780px){
+
+    nav {
+        background-color: $blue-purple-900;
+        height: 100vh;
+        width: 100%;
+        max-width: 450px;
+        position: fixed;
+        top: 0;
+        right: -450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 3rem;
+        transition: right 0.3s ease;
+        z-index: 10;
+
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            a {
+                color: $white-200 !important;
+                
+            
+                &.active {
+                    color: $pink-600 !important;
+                }
+
+                &:hover{
+                    font-weight: 600;
+                }
+            }
+        
+        }
+        
+
+        &.active {
+            right: 0;
+        }     
+                
+    }
+
+    .nav-ham-menu {
+        padding: 1rem;
+        display: flex;
+        z-index: 20;
+
+        .ham-menu {
+            height: 50px;
+            width: 50px;
+            margin-left: auto;
+            position: relative;
+            cursor: pointer;
+            z-index: 20;
+
+            span {
+                height: 5px;
+                width: 100%;
+                background-color: $pink-600;
+                border-radius: 25px;
+                position: absolute;
+                transition: 0.3s ease;
+
+                &:nth-child(1) {
+                    top: 10px;
+                }
+                &:nth-child(2) {
+                    top: 20px;
+                }
+                &:nth-child(3) {
+                    top: 30px;
+                }
+            }
+
+            &.active span {
+                &:nth-child(1) {
+                    top: 20px;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:nth-child(3) {
+                    top: 20px;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+
+    
 
     /*home*/
     .welcoming-container{
@@ -558,25 +672,6 @@ footer{
     .factors-section-cards-container{
         grid-template-columns: repeat(2, 1fr);
     }
-
-    /*team*/
-
-    .team-section{
-        padding: 20px;
-        gap: 30px;
-
-        &-text{
-            padding: 10px 20px;
-        }
-    
-        .team-cards-container{
-            grid-template-columns: repeat(1, 1fr);
-            padding: 20px;
-        }
-    }
-
-
-
 
 
     /*footer*/
@@ -655,3 +750,4 @@ footer{
  
 
 }
+

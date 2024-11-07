@@ -51,6 +51,7 @@ header nav ul li a .active {
   /*min-height 600px*/
   width: 100%;
   overflow: hidden;
+  z-index: 1;
 }
 .hero-section .hero-video {
   height: 100%;
@@ -407,7 +408,95 @@ footer .footer-right .newsletter-form .subscribe-button:hover {
 }
 
 /* Media Queries for Responsiveness */
+@media (max-width: 950px) {
+  /*team*/
+  .team-section {
+    padding: 20px;
+    gap: 30px;
+  }
+  .team-section-text {
+    padding: 10px 20px;
+  }
+  .team-section .team-cards-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+  }
+}
 @media (max-width: 780px) {
+  nav {
+    background-color: #26026d;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: right 0.3s ease;
+    z-index: 10;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul a {
+    color: #ebe6ff !important;
+  }
+  nav ul a.active {
+    color: #ed1579 !important;
+  }
+  nav ul a:hover {
+    font-weight: 600;
+  }
+  nav.active {
+    right: 0;
+  }
+  .nav-ham-menu {
+    padding: 1rem;
+    display: flex;
+    z-index: 20;
+  }
+  .nav-ham-menu .ham-menu {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+    cursor: pointer;
+    z-index: 20;
+  }
+  .nav-ham-menu .ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #ed1579;
+    border-radius: 25px;
+    position: absolute;
+    transition: 0.3s ease;
+  }
+  .nav-ham-menu .ham-menu span:nth-child(1) {
+    top: 10px;
+  }
+  .nav-ham-menu .ham-menu span:nth-child(2) {
+    top: 20px;
+  }
+  .nav-ham-menu .ham-menu span:nth-child(3) {
+    top: 30px;
+  }
+  .nav-ham-menu .ham-menu.active span:nth-child(1) {
+    top: 20px;
+    transform: rotate(45deg);
+  }
+  .nav-ham-menu .ham-menu.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-ham-menu .ham-menu.active span:nth-child(3) {
+    top: 20px;
+    transform: rotate(-45deg);
+  }
   /*home*/
   .welcoming-container {
     flex-wrap: wrap;
@@ -436,18 +525,6 @@ footer .footer-right .newsletter-form .subscribe-button:hover {
   }
   .factors-section-cards-container {
     grid-template-columns: repeat(2, 1fr);
-  }
-  /*team*/
-  .team-section {
-    padding: 20px;
-    gap: 30px;
-  }
-  .team-section-text {
-    padding: 10px 20px;
-  }
-  .team-section .team-cards-container {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 20px;
   }
   /*footer*/
   footer {
